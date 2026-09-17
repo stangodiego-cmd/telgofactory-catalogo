@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07182b">
+  <meta name="description" content="Catálogo online TELGOFACTORY - Soluciones para obra y hogar">
+  <title>TELGOFACTORY | Soluciones para obra y hogar</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <header class="site-header">
+      <button
+        id="btn-volver"
+        class="header-button header-button-back"
+        type="button"
+        aria-label="Volver"
+        hidden
+      >
+        ←
+      </button>
+
+      <a class="brand-home" href="./" aria-label="Ir al inicio de TELGOFACTORY">
+        <img
+          src="assets/logo/telgofactory-logo.png"
+          alt="TELGOFACTORY - Soluciones para obra y hogar"
+          class="header-logo"
+        >
+      </a>
+
+      <button
+        id="btn-carrito"
+        class="cart-button"
+        type="button"
+        aria-label="Abrir carrito"
+      >
+        <span class="cart-icon" aria-hidden="true">🛒</span>
+        <span class="cart-text">Carrito</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </header>
+
+    <main id="main-content">
+
+      <section id="vista-portada" class="view view-home">
+        <div class="hero">
+          <img
+            src="assets/portada/portada-telgofactory.png"
+            alt="TELGOFACTORY - Bolsas de telgopor molido y herramientas para obra y hogar"
+            class="hero-image"
+          >
+
+          <div class="hero-actions">
+            <button
+              class="commercial-line commercial-line-bags"
+              type="button"
+              data-linea="bolsas"
+            >
+              <span class="commercial-line-title">
+                Bolsas de telgopor molido
+              </span>
+              <span class="commercial-line-action">
+                Ver productos
+              </span>
+            </button>
+
+            <button
+              class="commercial-line commercial-line-tools"
+              type="button"
+              data-linea="herramientas"
+            >
+              <span class="commercial-line-title">
+                Herramientas, obra y hogar
+              </span>
+              <span class="commercial-line-action">
+                Ver categorías
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="vista-categorias" class="view" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Herramientas, obra y hogar</p>
+          <h1>Elegí un rubro</h1>
+          <p>Seleccioná la categoría que necesitás para ver sus productos.</p>
+        </div>
+
+        <div id="categorias-grid" class="category-grid"></div>
+      </section>
+
+      <section id="vista-familias" class="view" hidden>
+        <nav id="breadcrumb-familias" class="breadcrumb" aria-label="Ruta de navegación"></nav>
+
+        <div class="section-heading">
+          <p class="eyebrow">Categoría</p>
+          <h1 id="familias-titulo"></h1>
+          <p id="familias-subtitulo">
+            Elegí una familia para ver las variantes disponibles.
+          </p>
+        </div>
+
+        <div id="familias-grid" class="family-grid"></div>
+      </section>
+
+      <section id="vista-familia" class="view" hidden>
+        <nav id="breadcrumb-familia" class="breadcrumb" aria-label="Ruta de navegación"></nav>
+
+        <article class="family-detail">
+          <div class="family-media">
+            <img
+              id="familia-flyer"
+              src=""
+              alt=""
+              class="family-flyer"
+            >
+          </div>
+
+          <div class="family-info">
+            <p id="familia-categoria" class="eyebrow"></p>
+            <h1 id="familia-nombre"></h1>
+            <p id="familia-descripcion" class="family-description"></p>
+
+            <div class="product-table-wrapper">
+              <div class="product-table-header">
+                <span>Presentación</span>
+                <span>Precio</span>
+                <span>Cantidad</span>
+              </div>
+
+              <div id="articulos-lista" class="purchasable-list"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="vista-bolsas" class="view" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">TELGOFACTORY</p>
+          <h1>Bolsas de telgopor molido</h1>
+          <p>
+            Próximamente incorporaremos aquí la selección comercial de bolsas.
+          </p>
+        </div>
+
+        <div id="bolsas-contenido"></div>
+      </section>
+
+    </main>
+
+    <aside
+      id="carrito-panel"
+      class="cart-panel"
+      aria-label="Carrito de pedido"
+      aria-hidden="true"
+    >
+      <div class="cart-panel-header">
+        <div>
+          <p class="eyebrow">Tu pedido</p>
+          <h2>Carrito</h2>
+        </div>
+
+        <button
+          id="btn-cerrar-carrito"
+          class="close-button"
+          type="button"
+          aria-label="Cerrar carrito"
+        >
+          ×
+        </button>
+      </div>
+
+      <div id="carrito-vacio" class="empty-cart">
+        Todavía no agregaste productos.
+      </div>
+
+      <div id="carrito-items" class="cart-items"></div>
+
+      <div id="carrito-resumen" class="cart-summary" hidden>
+        <div class="cart-total-row">
+          <span>Total del pedido</span>
+          <strong id="carrito-total">$0</strong>
+        </div>
+
+        <button
+          id="btn-seguir-comprando"
+          class="secondary-button"
+          type="button"
+        >
+          Seguir comprando
+        </button>
+
+        <button
+          id="btn-whatsapp"
+          class="whatsapp-button"
+          type="button"
+        >
+          Enviar pedido por WhatsApp
+        </button>
+      </div>
+    </aside>
+
+    <div id="cart-overlay" class="cart-overlay" hidden></div>
+
+    <div
+      id="toast"
+      class="toast"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
