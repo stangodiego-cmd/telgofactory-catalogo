@@ -3,7 +3,7 @@
 /* Extensión TELGOFACTORY: mejoras móviles + línea de bolsas */
 
 CONFIG.logo = "logo PNG Telgofactory.png";
-CONFIG.bolsaFlyer = "bolsa telgopor 110l.png";
+CONFIG.bolsaFlyer = "bolsa_2.png";
 
 const BAG_ID = "bolsa-telgopor-110l";
 const BAG_ARTICLE = {
