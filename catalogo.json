@@ -13,7 +13,7 @@
         {
           "id": "mecha-widia",
           "nombre": "Mecha Widia",
-          "flyer": "mechas de widia.jpeg",
+          "flyer": "mecha widia ok.png",
           "descripcion": "Mecha diseñada para perforaciones en mampostería y materiales de obra. Disponible en diferentes medidas según el diámetro de perforación requerido.",
           "articulos": [
             {
@@ -64,7 +64,7 @@
         {
           "id": "set-sierra-copa-bimetalica",
           "nombre": "Set de sierra copa bimetálica",
-          "flyer": "conjunto de sierras.jpeg",
+          "flyer": "set de sierras.jpeg",
           "descripcion": "Juego de sierras copa pensado para realizar perforaciones circulares. Se ofrece en distintas presentaciones según la cantidad de piezas incluidas.",
           "articulos": [
             {
@@ -91,24 +91,16 @@
       "nombre": "Herramientas manuales para obra",
       "familias": [
         {
-          "id": "maza-albanil",
-          "nombre": "Maza de albañil",
+          "id": "herramientas-golpe",
+          "nombre": "Herramientas de golpe",
           "flyer": "martillos.jpeg",
-          "descripcion": "Herramienta manual de golpe utilizada en tareas de albañilería, obra y mantenimiento general. Su formato permite aplicar golpes de manera controlada durante distintos trabajos.",
+          "descripcion": "Familia de herramientas manuales de golpe que reúne mazas y martillos disponibles en distintas presentaciones.",
           "articulos": [
             {
               "id": "maza-albanil-1lb",
               "nombre": "Maza de albañil 1 lb",
               "variante": "1 lb"
-            }
-          ]
-        },
-        {
-          "id": "maza-goma",
-          "nombre": "Maza de goma",
-          "flyer": "martillos.jpeg",
-          "descripcion": "Herramienta manual de golpe con cabeza de goma, utilizada para ajustar, acomodar o golpear piezas reduciendo el riesgo de marcar la superficie. Disponible en dos pesos.",
-          "articulos": [
+            },
             {
               "id": "maza-goma-300g",
               "nombre": "Maza de goma 300 g",
@@ -118,28 +110,40 @@
               "id": "maza-goma-500g",
               "nombre": "Maza de goma 500 g",
               "variante": "500 g"
-            }
-          ]
-        },
-        {
-          "id": "pala-ancha",
-          "nombre": "Pala ancha",
-          "flyer": "palas.jpeg",
-          "descripcion": "Pala de hoja ancha para mover, cargar y distribuir materiales sueltos. De uso habitual en tareas de obra, jardín y mantenimiento.",
-          "articulos": [
+            },
             {
-              "id": "pala-ancha-mango-madera",
-              "nombre": "Pala ancha con mango de madera",
+              "id": "martillo-bolita-1-2",
+              "nombre": "Martillo bolita 1/2",
+              "variante": "1/2"
+            },
+            {
+              "id": "martillo-bolita-3-4",
+              "nombre": "Martillo bolita 3/4",
+              "variante": "3/4"
+            },
+            {
+              "id": "martillo-galponero-mango-fibra",
+              "nombre": "Martillo galponero mango de fibra",
+              "variante": "Mango de fibra"
+            },
+            {
+              "id": "martillo-galponero-mango-madera",
+              "nombre": "Martillo galponero mango de madera",
               "variante": "Mango de madera"
             }
           ]
         },
         {
-          "id": "pala-pocera",
-          "nombre": "Pala pocera",
+          "id": "palas-obra",
+          "nombre": "Palas de obra",
           "flyer": "palas.jpeg",
-          "descripcion": "Pala de formato angosto pensada para cavar pozos, zanjas o sectores de acceso reducido. De uso habitual en trabajos de obra, instalación y mantenimiento.",
+          "descripcion": "Familia de palas para tareas de obra y mantenimiento. Incluye pala ancha con mango de madera y pala pocera con mango de fibra.",
           "articulos": [
+            {
+              "id": "pala-ancha-mango-madera",
+              "nombre": "Pala ancha con mango de madera",
+              "variante": "Mango de madera"
+            },
             {
               "id": "pala-pocera-mango-fibra",
               "nombre": "Pala pocera con mango de fibra",
