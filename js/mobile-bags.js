@@ -3,7 +3,7 @@
 /* Extensión TELGOFACTORY: mejoras móviles + línea de bolsas */
 
 CONFIG.logo = "logo PNG Telgofactory.png";
-CONFIG.bolsaFlyer = "ChatGPT Imagen 17 sept 2026, 08_23_15 p.m.png";
+CONFIG.bolsaFlyer = "ChatGPT Image 17 sept 2026, 08_23_15 p.m..png";
 
 const BAG_ID = "bolsa-telgopor-110l";
 const BAG_ARTICLE = {
